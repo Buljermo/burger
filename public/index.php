@@ -15,7 +15,9 @@
   // Selvitetään mitä sivua on kutsuttu ja suoritetaan sivua vastaava
   // käsittelijä.
   if ($request === '/' || $request === '/ravintolat') {
-    echo $templates->render('ravintolat');
+    require_once MODEL_DIR . 'ravintola.php';
+    $ravintolat = haeRavintolat();
+    echo $templates->render('ravintolat',['ravintolat' => $ravintolat]);
   } else if ($request === '/ravintola') {
     echo $templates->render('ravintola');
   } else {
