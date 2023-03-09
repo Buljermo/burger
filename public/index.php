@@ -16,9 +16,6 @@
   // käsittelijä.
   switch ($request) {
     case '/':
-
-
-      
     case '/ravintolat':
       require_once MODEL_DIR . 'ravintola.php';
       $ravintolat = haeRavintolat();

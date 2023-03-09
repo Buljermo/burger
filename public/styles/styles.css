@@ -46,6 +46,12 @@ section h1 {
     margin-bottom: 1rem;
 }
 
+section a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
 hr {
     border: none;
     border-top: solid #1B1B3A 2px;
