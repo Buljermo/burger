@@ -19,7 +19,13 @@
     $ravintolat = haeRavintolat();
     echo $templates->render('ravintolat',['ravintolat' => $ravintolat]);
   } else if ($request === '/ravintola') {
-    echo $templates->render('ravintola');
+    require_once MODEL_DIR . 'ravintola.php';
+    $ravintola = haeRavintola($_GET['id']);
+    if ($ravintola) {
+      echo $templates->render('ravintola',['ravintola' => $ravintola]);
+    } else {
+      echo $templates->render('ravintolanotfound');
+    }
   } else {
     echo $templates->render('notfound');
   }
