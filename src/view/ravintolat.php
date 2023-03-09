@@ -14,6 +14,7 @@
     echo "<div>$ravintola[nimi]</div>";
     echo "<div>$ravintola[osoite]</div>";
     echo "<div>$ravintola[aukioloajat]</div>";
+    echo "<div><a href='ravintola?id=" . $ravintola['idravintola'] . "'>LISÄTIEDOT</a></div>";
     echo "<br>";
     echo "</div>";
 
