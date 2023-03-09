@@ -16,6 +16,9 @@
   // käsittelijä.
   switch ($request) {
     case '/':
+
+
+      
     case '/ravintolat':
       require_once MODEL_DIR . 'ravintola.php';
       $ravintolat = haeRavintolat();
@@ -30,6 +33,11 @@
         echo $templates->render('ravintolanotfound');
       }
       break;
+      case '/burgerit':
+        require_once MODEL_DIR . 'burgerit.php';
+        $burgerit = haeBurgerit();
+        echo $templates->render('burgerit',['burgerit' => $burgerit]);
+        break;
     // case '/lisaa_tili':
     //   echo $templates->render('lisaa_tili');
     //   break;

@@ -11,9 +11,10 @@
   <header>
     <h1><a href="<?= BASEURL ?>">Turo's Burger</a></h1>
   </header>
-  <nav>
+  <nav class="navigointi">
     <!-- <div><a href="<?=BASEURL?>"><img src="<?=BASEURL."/images/home.png"?>" alt="Etusivu"></a></div> -->
     <div><a href="<?=BASEURL?>">Etusivu</a></div>
+    <div><a href="<?=BASEURL."/burgerit"?>">Burgerit</a></div>
   </nav>
   <section>
     <?= $this->section('content') ?>

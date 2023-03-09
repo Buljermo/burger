@@ -80,9 +80,15 @@ nav {
 nav a {
     color: #000;
     text-decoration: none;
+    margin-right: 0.5em;
     
 }
 
+.navigointi {
+    display: flex;
+    justify-content: flex-start;
+}
+
 nav :hover {
-    color:white;
+    color:rgba(0, 0, 0, 0.401);
 }
