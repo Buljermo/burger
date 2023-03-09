@@ -23,7 +23,7 @@ body {
 }
   
 header {
-    background-color: #c8c1b8;
+    background-color: #f4f47c;
     padding: 1rem 1.5rem;
 }
   
@@ -73,3 +73,16 @@ footer {
     justify-content:space-between;
 }
   
+nav {
+    background-color: rgb(233, 243, 165);
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    
+}
+
+nav :hover {
+    color:white;
+}
