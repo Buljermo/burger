@@ -14,21 +14,29 @@
 
   // Selvitetään mitä sivua on kutsuttu ja suoritetaan sivua vastaava
   // käsittelijä.
-  if ($request === '/' || $request === '/ravintolat') {
-    require_once MODEL_DIR . 'ravintola.php';
-    $ravintolat = haeRavintolat();
-    echo $templates->render('ravintolat',['ravintolat' => $ravintolat]);
-  } else if ($request === '/ravintola') {
-    require_once MODEL_DIR . 'ravintola.php';
-    $ravintola = haeRavintola($_GET['id']);
-    if ($ravintola) {
-      echo $templates->render('ravintola',['ravintola' => $ravintola]);
-    } else {
-      echo $templates->render('ravintolanotfound');
-    }
-  } else {
-    echo $templates->render('notfound');
-  }
+  switch ($request) {
+    case '/':
+    case '/ravintolat':
+      require_once MODEL_DIR . 'ravintola.php';
+      $ravintolat = haeRavintolat();
+      echo $templates->render('ravintolat',['ravintolat' => $ravintolat]);
+      break;
+    case '/ravintola':
+      require_once MODEL_DIR . 'ravintola.php';
+      $ravintola = haeRavintola($_GET['id']);
+      if ($ravintola) {
+        echo $templates->render('ravintola',['ravintola' => $ravintola]);
+      } else {
+        echo $templates->render('ravintolanotfound');
+      }
+      break;
+    // case '/lisaa_tili':
+    //   echo $templates->render('lisaa_tili');
+    //   break;
+    default:
+      echo $templates->render('notfound');
+  }    
+
 
 
 ?> 
