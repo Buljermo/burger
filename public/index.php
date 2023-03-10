@@ -35,6 +35,12 @@
         $burgerit = haeBurgerit();
         echo $templates->render('burgerit',['burgerit' => $burgerit]);
         break;
+      case '/juomat':
+        require_once MODEL_DIR . 'juomat.php';
+        $juomat = haeJuomat();
+        echo $templates->render('juomat',['juomat' => $juomat]);
+        break;
+  
     // case '/lisaa_tili':
     //   echo $templates->render('lisaa_tili');
     //   break;

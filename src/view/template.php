@@ -15,6 +15,7 @@
     <!-- <div><a href="<?=BASEURL?>"><img src="<?=BASEURL."/images/home.png"?>" alt="Etusivu"></a></div> -->
     <div><a href="<?=BASEURL?>">Etusivu</a></div>
     <div><a href="<?=BASEURL."/burgerit"?>">Burgerit</a></div>
+    <div><a href="<?=BASEURL."/juomat"?>">Juomat</a></div>
   </nav>
   <section>
     <?= $this->section('content') ?>
