@@ -1,6 +1,6 @@
 <?php $this->layout('template', ['title' => 'Meidän ravintolat']) ?>
 
-<h1>Meidän ravintolat</h1>
+<h1>Meidän ravintolat:</h1>
 
 <div class='ravintolat'>
   <?php
@@ -10,7 +10,7 @@
     //$start = new DateTime($ravintola['tap_alkaa']);
     //$end = new DateTime($ravintola['tap_loppuu']);
   
-    echo "<div>";
+    echo "<div class='message'>";    
     echo "<div>$ravintola[nimi]</div>";
     echo "<div>$ravintola[osoite]</div>";
     //echo "<div>$ravintola[aukioloajat]</div>";

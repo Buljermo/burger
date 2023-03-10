@@ -23,7 +23,9 @@ body {
 }
   
 header {
-    background-color: #f4f47c;
+    background: rgb(241,244,210);
+    background: linear-gradient(90deg, rgba(241,244,210,1) 0%, rgba(230,165,35,1) 61%, rgba(236,30,76,1) 100%);    
+    /* background-color: #f4f47c; */
     padding: 1rem 1.5rem;
 }
   
@@ -98,3 +100,18 @@ nav a {
 nav :hover {
     color:rgba(0, 0, 0, 0.401);
 }
+
+.message {
+    background: rgb(241,244,210);
+    background: linear-gradient(90deg, rgba(241,244,210,1) 0%, rgba(230,165,35,1) 61%, rgba(236,30,76,1) 100%);    
+}
+
+.palaute-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.message div.timestamp {
+    font-size: 10px;
+  }
+  

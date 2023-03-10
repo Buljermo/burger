@@ -48,7 +48,9 @@
       case '/lisaa_palaute':
         if (isset($_POST['laheta'])) {
           require_once MODEL_DIR . 'lisaa_palaute.php';
-          $id = lisaaPalaute($_POST['kirjoittaja'],$_POST['text']);
+          require_once MODEL_DIR . 'palaute.php';
+          $lisaapalaute = lisaaPalaute($_POST['kirjoittaja'],$_POST['text']);
+          echo $templates->render('lisaa_palaute',['lisaa_palaute' => $lisaapalaute]);
           //echo $templates->render('lisaa_palaute',['lisaa_palaute' => $lisaapalaute]);
           echo "Palaute on lähetty";
           break;

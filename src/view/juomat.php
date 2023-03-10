@@ -10,7 +10,7 @@ foreach ($juomat as $juomat) {
   //$start = new DateTime($tapahtuma['tap_alkaa']);
   //$end = new DateTime($tapahtuma['tap_loppuu']);
 
-  echo "<div>";
+  echo "<div class='message'>";
     echo "<b><div>$juomat[nimi]:</div></b>";
     echo "<div>$juomat[kuvaus].</div>";
     echo "<div>Hinta on $juomat[hinta] £.</div>";

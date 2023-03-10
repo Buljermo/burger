@@ -10,9 +10,12 @@ foreach ($palaute as $palaute) {
   //$start = new DateTime($tapahtuma['tap_alkaa']);
   //$end = new DateTime($tapahtuma['tap_loppuu']);
 
-  echo "<div>";
+  echo "<div class='message'>";
     echo "<b><div>$palaute[kirjoittaja]:</div></b>";
-    echo "<div>$palaute[text].</div>";
+    echo "<div>$palaute[text]</div>";
+    echo "<div class='timestamp'>$palaute[timestamp]</div>";
+    echo "<br>";
+    echo "<hr>";
     //echo "<div>Hinta on $palaute[hinta] £.</div>";
     //echo "<hr>";
     // echo "<div>" . $start->format('j.n.Y') . "-" . $end->format('j.n.Y') . "</div>";
