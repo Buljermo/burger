@@ -40,7 +40,22 @@
         $juomat = haeJuomat();
         echo $templates->render('juomat',['juomat' => $juomat]);
         break;
-  
+      case '/palaute':
+        require_once MODEL_DIR . 'palaute.php';
+        $palaute = haePalaute();
+        echo $templates->render('palaute',['palaute' => $palaute]);
+        break;
+      case '/lisaa_palaute':
+        if (isset($_POST['laheta'])) {
+          require_once MODEL_DIR . 'lisaa_palaute.php';
+          $id = lisaaPalaute($_POST['kirjoittaja'],$_POST['text']);
+          //echo $templates->render('lisaa_palaute',['lisaa_palaute' => $lisaapalaute]);
+          echo "Palaute on lähetty";
+          break;
+        } else {
+          echo $templates->render('lisaa_palaute');
+          break;
+        }    
     // case '/lisaa_tili':
     //   echo $templates->render('lisaa_tili');
     //   break;
