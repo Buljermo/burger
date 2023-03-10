@@ -9,7 +9,9 @@
 
 <body>
   <header>
-    <h1><a href="<?= BASEURL ?>">Turo's Burger<img src="<?=BASEURL."/images/logo.png"?>" alt="Etusivu"></a></h1>
+    <h1><a href="<?= BASEURL ?>">Turo's Burger<img src="<?=BASEURL."/images/home.png"?>" alt="Etusivu"></a></h1>
+    <div><a href="<?=BASEURL."/burgerit"?>"><img src="<?=BASEURL."/images/logo.png"?>" alt="Etusivu"></a></div>
+    <div><a href="<?=BASEURL."/juomat"?>"><img src="<?=BASEURL."/images/drink.png"?>" alt="Etusivu"></a></div>
   </header>
   <nav class="navigointi">
     <!-- <div><a href="<?=BASEURL?>"><img src="<?=BASEURL."/images/home.png"?>" alt="Etusivu"></a></div> -->

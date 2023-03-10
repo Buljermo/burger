@@ -118,6 +118,10 @@ nav :hover {
   
 
 header img {
-    height: 60px;
+    height: 50px;
     margin-left: 1em;
   }
+
+header {
+    display: flex;
+}
