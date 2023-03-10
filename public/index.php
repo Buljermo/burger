@@ -51,16 +51,15 @@
           require_once MODEL_DIR . 'palaute.php';
           $lisaapalaute = lisaaPalaute($_POST['kirjoittaja'],$_POST['text']);
           echo $templates->render('lisaa_palaute',['lisaa_palaute' => $lisaapalaute]);
-          //echo $templates->render('lisaa_palaute',['lisaa_palaute' => $lisaapalaute]);
           echo "Palaute on lähetty";
           break;
         } else {
           echo $templates->render('lisaa_palaute');
           break;
-        }    
-    // case '/lisaa_tili':
-    //   echo $templates->render('lisaa_tili');
-    //   break;
+        }
+      case '/yhteystiedot':
+          echo $templates->render('yhteystiedot');
+          break;   
     default:
       echo $templates->render('notfound');
   }    

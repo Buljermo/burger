@@ -89,6 +89,7 @@ nav a {
     color: #000;
     text-decoration: none;
     margin-right: 0.5em;
+    margin-left: 0.5em;
     
 }
 
@@ -115,3 +116,8 @@ nav :hover {
     font-size: 10px;
   }
   
+
+header img {
+    height: 60px;
+    margin-left: 1em;
+  }

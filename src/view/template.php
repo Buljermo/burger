@@ -9,7 +9,7 @@
 
 <body>
   <header>
-    <h1><a href="<?= BASEURL ?>">Turo's Burger</a></h1>
+    <h1><a href="<?= BASEURL ?>">Turo's Burger<img src="<?=BASEURL."/images/logo.png"?>" alt="Etusivu"></a></h1>
   </header>
   <nav class="navigointi">
     <!-- <div><a href="<?=BASEURL?>"><img src="<?=BASEURL."/images/home.png"?>" alt="Etusivu"></a></div> -->
@@ -18,6 +18,7 @@
     <div><a href="<?=BASEURL."/juomat"?>">Juomat</a></div>
     <div><a href="<?=BASEURL."/palaute"?>">Palaute</a></div>
     <div><a href="<?=BASEURL."/lisaa_palaute"?>">Lisää palaute</a></div>
+    <div><a href="<?=BASEURL."/yhteystiedot"?>">Yhtestiedot</a></div>
   </nav>
   <section>
     <?= $this->section('content') ?>
