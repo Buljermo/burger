@@ -60,6 +60,9 @@
       case '/yhteystiedot':
           echo $templates->render('yhteystiedot');
           break;   
+      case '/toimittajia':
+          echo $templates->render('toimittajia');
+          break;  
     default:
       echo $templates->render('notfound');
   }    

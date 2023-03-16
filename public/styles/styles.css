@@ -125,3 +125,8 @@ header img {
 header {
     display: flex;
 }
+
+
+.toimlink {
+    color: rgb(0, 0, 255);
+}
