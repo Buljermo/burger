@@ -5,11 +5,11 @@
 <form class="palaute-form" action="" method="POST">
   <div>
     <label for="kirjoittaja">Nimi:</label>
-    <input id="kirjoittaja" type="text" name="kirjoittaja">
+    <input required id="kirjoittaja" type="text" name="kirjoittaja">
   </div>
   <div>
     <label for="text"> Palaute:</label>
-    <input id="text" type="text" name="text">
+    <input required id="text" type="text" name="text">
   </div>
   <div>
     <input type="submit" name="laheta" value="Lähetä palaute">
